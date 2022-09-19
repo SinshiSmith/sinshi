@@ -4,12 +4,10 @@ import { TbWorld } from "react-icons/tb";
 import { MdLocationPin } from "react-icons/md";
 
 import styles from "../styles/Resume.module.css";
-import Header from "../components/Header";
 
 export default function Resume() {
   return (
     <div className={styles.page}>
-      <Header />
       <div className={styles.container}>
         <div className={styles.title}>
           <div>
