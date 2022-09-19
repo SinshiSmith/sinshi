@@ -1,0 +1,86 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 25px;
+  background: var(--white);
+  color: var(--black);
+  max-width: 800px;
+  border-radius: 5px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.title h1 {
+  font-size: 52px;
+}
+.title h3 {
+  font-size: 28px;
+  /* color: var(--french-blue); */
+
+}
+.title h1, .title h3 {
+  margin: 0;
+}
+
+
+.resume h2 {
+  font-size: 24px;
+  /* color: var(--crimson); */
+}
+
+.experience {
+  margin-bottom: 40px;
+}
+
+.position {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-wrap: wrap;
+  /* color: var(--french-blue); */
+}
+
+
+
+.position h3, .position p {
+  margin: 0;
+}
+.position h3 {
+  margin-right: 10px;
+}
+
+.compactContactLine {
+  display: flex;
+  align-items: center;
+}
+.compactContactLine a {
+  margin-left: 5px;
+
+}
+
+.contactLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactLine p {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .resume {
+    display: block;
+  }
+}
