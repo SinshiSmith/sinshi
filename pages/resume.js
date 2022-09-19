@@ -4,10 +4,15 @@ import { TbWorld } from "react-icons/tb";
 import { MdLocationPin } from "react-icons/md";
 
 import styles from "../styles/Resume.module.css";
+import Head from "next/head";
 
 export default function Resume() {
   return (
     <div className={styles.page}>
+      <Head>
+        <title>Ahmed Hafez | Resume</title>
+        <meta name="description" content="Ahmed Hafez | Resume" />
+      </Head>
       <div className={styles.container}>
         <div className={styles.title}>
           <div>
