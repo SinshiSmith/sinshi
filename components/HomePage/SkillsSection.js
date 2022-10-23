@@ -29,7 +29,7 @@ export default function SkillsSection() {
   return (
     <section className={styles.section}>
       <div>
-        <h2>Skills and technologies</h2>
+        <h2>Skills And Technologies</h2>
         <ul className={styles.grid}>
           {skills.map(({ name, icon }) => (
             <Skill key={name} name={name} icon={icon} />
