@@ -1,0 +1,30 @@
+.section {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 30px;
+  max-width: 550px;
+  align-items: center;
+}
+
+.skillBox {
+  height: 150px;
+  border-radius: 5px;
+  background-color: var(--white);
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillBox p {
+  margin: 0;
+}

@@ -5,6 +5,7 @@ import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 
 import sinshiPic from "../public/sinshi.jpg";
 import Link from "next/link";
+import SkillsSection from "../components/HomePage/SkillsSection";
 
 export default function Home() {
   return (
@@ -50,6 +51,7 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <SkillsSection />
     </div>
   );
 }
