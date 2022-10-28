@@ -37,8 +37,8 @@ export default function Home() {
           <a className={styles.callToAction} href="mailto:yorfnd@gmail.com">
             <FaEnvelope /> Let&apos;s Talk
           </a>
-          <Link href="/resume">
-            <a className={styles.resumeButton}>Resume</a>
+          <Link href="/resume" className={styles.resumeButton}>
+            Resume
           </Link>
 
           <div className={styles.socialLinks}>
