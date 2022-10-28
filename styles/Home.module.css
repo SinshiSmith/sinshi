@@ -1,6 +1,7 @@
 .profilePic {
   border-radius: 50%;
   object-position: 25% 0%;
+  object-fit: cover;
 }
 
 .main {

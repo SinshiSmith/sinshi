@@ -21,7 +21,6 @@ export default function Home() {
             src={sinshiPic}
             alt="Picture of Sinshi"
             className={styles.profilePic}
-            objectFit="cover"
             width={180}
             height={180}
           />
