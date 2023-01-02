@@ -23,16 +23,16 @@ export default function Resume() {
             <CompactContactLine href="/" name="sinshi.dev" icon={<TbWorld />} />
             <CompactContactLine
               href="/"
-              name="Egypt, Cairo"
+              name="Giza, Egypt"
               icon={<MdLocationPin />}
             />
             <CompactContactLine
-              href="/"
+              href="tel:+201110763080"
               name="+201110763080"
               icon={<FaWhatsapp />}
             />
             <CompactContactLine
-              href="/"
+              href="mailto:yorfnd@gmail.com"
               name="yorfnd@gmail.com"
               icon={<FaEnvelope />}
             />
