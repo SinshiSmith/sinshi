@@ -57,3 +57,7 @@
 .compactContactLine a {
   margin-left: 5px;
 }
+
+.experience p {
+  margin: 0;
+}

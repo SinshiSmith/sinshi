@@ -72,6 +72,15 @@ export default function Resume() {
           />
         </section>
 
+        <section className={styles.experience}>
+          <h2>Education</h2>
+          <div className={styles.position}>
+            <h3>Helwan University</h3>
+            <p>2015-2019</p>
+          </div>
+          <p>Bachelor of Commerce, Applied Statistics</p>
+        </section>
+
         <section>
           <h2>Skills:</h2>
           <ul>
