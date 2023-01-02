@@ -74,20 +74,6 @@ export default function Resume() {
             </section>
           </main>
           <side>
-            {/* <section>
-              <h2>Contact Info:</h2>
-              <ContactLine name="Email" value="yorfnd@gmail.com" href="" />
-              <ContactLine
-                name="Website"
-                value="sinshi.dev"
-                href="https://www.sinshi.dev"
-              />
-              <ContactLine
-                name="Github"
-                value="github.com/SinshiSmith"
-                href="https://github.com/SinshiSmith"
-              />
-            </section> */}
             <section>
               <h2>Skills:</h2>
               <ul>
