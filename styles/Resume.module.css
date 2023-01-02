@@ -31,11 +31,6 @@
   margin: 0;
 }
 
-
-.resume h2 {
-  font-size: 24px;
-}
-
 .experience {
   margin-bottom: 40px;
 }
@@ -46,11 +41,10 @@
   flex-wrap: wrap;
 }
 
-
-
 .position h3, .position p {
   margin: 0;
 }
+
 .position h3 {
   margin-right: 10px;
 }
@@ -59,23 +53,7 @@
   display: flex;
   align-items: center;
 }
+
 .compactContactLine a {
   margin-left: 5px;
-
-}
-
-.contactLine {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.contactLine p {
-  margin-top: 0;
-}
-
-@media screen and (max-width: 700px) {
-  .resume {
-    display: block;
-  }
 }
