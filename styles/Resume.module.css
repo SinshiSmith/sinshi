@@ -26,17 +26,9 @@
 }
 .title h3 {
   font-size: 28px;
-  /* color: var(--french-blue); */
-
 }
 .title h1, .title h3 {
   margin: 0;
-}
-
-
-.resume h2 {
-  font-size: 24px;
-  /* color: var(--crimson); */
 }
 
 .experience {
@@ -45,17 +37,14 @@
 
 .position {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   flex-wrap: wrap;
-  /* color: var(--french-blue); */
 }
-
-
 
 .position h3, .position p {
   margin: 0;
 }
+
 .position h3 {
   margin-right: 10px;
 }
@@ -64,23 +53,11 @@
   display: flex;
   align-items: center;
 }
+
 .compactContactLine a {
   margin-left: 5px;
-
 }
 
-.contactLine {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.contactLine p {
-  margin-top: 0;
-}
-
-@media screen and (max-width: 700px) {
-  .resume {
-    display: block;
-  }
+.experience p {
+  margin: 0;
 }
