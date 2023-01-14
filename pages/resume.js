@@ -48,7 +48,7 @@ export default function Resume() {
           <h2>Experience:</h2>
           <Experience
             company="Pocketful of Quarters, Inc"
-            date="2020-Current"
+            date="2020 - 2022"
             items={[
               `Leading a team of 5+ developers for migration into a new
                 database scheme covered with Integration and e2e tests`,
@@ -76,7 +76,7 @@ export default function Resume() {
           <h2>Education</h2>
           <div className={styles.position}>
             <h3>Helwan University</h3>
-            <p>2015-2019</p>
+            <p>2015 - 2019</p>
           </div>
           <p>Bachelor of Commerce, Applied Statistics</p>
         </section>
