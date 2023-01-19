@@ -49,7 +49,7 @@ export default function Resume() {
           <Experience
             title="Senior Frontend Developer"
             company="Pocketful of Quarters, Inc"
-            date="2020 - 2022"
+            date="May 2020 - Sep 2022"
             items={[
               `Leading a team of 5+ developers for migration into a new
                 database scheme covered with Integration and e2e tests`,
@@ -63,13 +63,22 @@ export default function Resume() {
           <Experience
             title="Frontend Developer"
             company="Tatsu Works Pte Ltd"
-            date="2019-2020"
+            date="Jun 2019 - May 2020"
             items={[
               `Creating a scalable and reliable code base from scratch using tech stack that work best for the website`,
-              `Implementing real-time Discord embedded message
-                preview`,
+              `Implementing real-time Discord embedded message preview`,
               `Implementing an in-app store for digital goods with search, categories and filtering`,
               `Implementing discord bot management dashboard`,
+            ]}
+          />
+
+          <Experience
+            title="Frontend Developer Intern"
+            company="Midrule"
+            date="Jun 2018 - Jul 2018"
+            items={[
+              `Designed UX/UI for company website`,
+              `Developed Company Website`,
             ]}
           />
         </section>
@@ -80,7 +89,9 @@ export default function Resume() {
             <h3>Helwan University</h3>
             <p>2015 - 2019</p>
           </div>
-          <p>Bachelor of Commerce, Applied Statistics</p>
+          <p>
+            Bachelor of Commerce and Business Administration, Applied Statistics
+          </p>
         </section>
 
         <section>
