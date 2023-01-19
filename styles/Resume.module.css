@@ -37,16 +37,14 @@
 
 .position {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .position h3, .position p {
   margin: 0;
-}
-
-.position h3 {
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .compactContactLine {
@@ -56,8 +54,4 @@
 
 .compactContactLine a {
   margin-left: 5px;
-}
-
-.experience p {
-  margin: 0;
 }

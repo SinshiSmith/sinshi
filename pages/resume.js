@@ -47,6 +47,7 @@ export default function Resume() {
         <section>
           <h2>Experience:</h2>
           <Experience
+            title="Senior Frontend Developer"
             company="Pocketful of Quarters, Inc"
             date="2020 - 2022"
             items={[
@@ -60,6 +61,7 @@ export default function Resume() {
             ]}
           />
           <Experience
+            title="Frontend Developer"
             company="Tatsu Works Pte Ltd"
             date="2019-2020"
             items={[
@@ -115,11 +117,14 @@ function CompactContactLine({ name, href, icon }) {
   );
 }
 
-function Experience({ company, date, items }) {
+function Experience({ company, date, items, title }) {
   return (
     <div className={styles.experience}>
       <div className={styles.position}>
-        <h3>{company}</h3>
+        <div>
+          <h3>{title}</h3>
+          <p>{company}</p>
+        </div>
         <p>{date}</p>
       </div>
       {items && (
