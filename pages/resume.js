@@ -51,12 +51,11 @@ export default function Resume() {
             company="Pocketful of Quarters, Inc"
             date="May 2020 - Sep 2022"
             items={[
-              `Leading a team of 5+ developers for migration into a new
-                database scheme covered with Integration and e2e tests`,
-              `Working closely with CEO and users to Revamp the website UX/Ul design`,
-              `Creating mock kit to make unit and integration tests easier and faster`,
-
-              `Designing a transactions page for the blockchain currency
+              `Lead a team of 4 Junior developers for migration into a new
+                database scheme with Integration and E2E tests`,
+              `Worked closely with CEO and users to Revamp the website UX/Ul design`,
+              `Developed mock kit to make unit and integration tests easier and faster`,
+              `Designed and Developed a transactions page for the blockchain currency
                   Quarters`,
             ]}
           />
@@ -65,10 +64,10 @@ export default function Resume() {
             company="Tatsu Works Pte Ltd"
             date="Jun 2019 - May 2020"
             items={[
-              `Creating a scalable and reliable code base from scratch using tech stack that work best for the website`,
-              `Implementing real-time Discord embedded message preview`,
-              `Implementing an in-app store for digital goods with search, categories and filtering`,
-              `Implementing discord bot management dashboard`,
+              `Created a scalable and reliable code base from scratch using tech stack that work best for the website`,
+              `Developed real-time Discord embedded message preview`,
+              `Developed an in-app store for digital goods with search, categories and filtering`,
+              `Developed discord bot management dashboard`,
             ]}
           />
 
