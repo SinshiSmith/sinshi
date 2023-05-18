@@ -116,7 +116,7 @@ export default function Resume() {
           <Skills />
         </section>
         <section>
-          <h2 className={styles.sectionTitle}>languages</h2>
+          <h2 className={styles.sectionTitle}>Languages</h2>
           <hr />
           <ul>
             <li>Arabic: Native</li>
