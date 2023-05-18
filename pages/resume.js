@@ -49,6 +49,17 @@ export default function Resume() {
           <h2 className={styles.sectionTitle}>Professional Experience</h2>
           <hr />
           <Experience
+            title="Full-Stack Developer"
+            company="2B Creative"
+            date="Jan 2023 - Current"
+            items={[
+              `Developed and maintained 3 React.js websites with i18n support`,
+              `Integrated Storyblok CMS with React website to allow building web pages with visual editor`,
+              `Improved Typescript developer experience with Storyblok`,
+              `Added support for live chat & reCaptcha protection on forms`,
+            ]}
+          />
+          <Experience
             title="Lead Frontend Developer"
             company="Pocketful of Quarters, Inc"
             date="Jan 2021 - Sep 2022"
@@ -116,7 +127,7 @@ export default function Resume() {
           <Skills />
         </section>
         <section>
-          <h2 className={styles.sectionTitle}>languages</h2>
+          <h2 className={styles.sectionTitle}>Languages</h2>
           <hr />
           <ul>
             <li>Arabic: Native</li>
