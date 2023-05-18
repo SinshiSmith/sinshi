@@ -37,14 +37,12 @@
 
 .position {
   display: flex;
-  /* align-items: center; */
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .position h3, .position p {
   margin: 0;
-  /* margin-right: 10px; */
 }
 
 .compactContactLine {
