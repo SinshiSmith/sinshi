@@ -3,22 +3,21 @@ import { FaEnvelope, FaWhatsapp, FaGithub } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import { MdLocationPin } from "react-icons/md";
 
-import styles from "../styles/Resume.module.css";
 import Head from "next/head";
 import Skills from "../components/Resume/Skills";
 
 export default function Resume() {
   return (
-    <div className={styles.page}>
+    <div className="flex min-h-screen items-center justify-center">
       <Head>
         <title>Ahmed Hafez | Resume</title>
         <meta name="description" content="Ahmed Hafez | Resume" />
       </Head>
-      <div className={styles.container}>
-        <div className={styles.title}>
+      <div className="max-w-[800px] rounded bg-gray-100 p-6 text-black">
+        <div className="mb-10 flex flex-wrap justify-between">
           <div>
-            <h1>Ahmed Hafez</h1>
-            <h3>Senior Frontend Developer</h3>
+            <h1 className="text-6xl font-bold">Ahmed Hafez</h1>
+            <h2 className="text-3xl font-bold">Senior Frontend Developer</h2>
           </div>
           <div>
             <CompactContactLine href="/" name="sinshi.dev" icon={<TbWorld />} />
@@ -46,8 +45,10 @@ export default function Resume() {
         </div>
 
         <section>
-          <h2 className={styles.sectionTitle}>Professional Experience</h2>
-          <hr />
+          <h2 className="mb-5 text-center text-2xl font-bold">
+            Professional Experience
+          </h2>
+          <hr className="my-2 border-black" />
           <Experience
             title="Full-Stack Developer"
             company="2B Creative"
@@ -121,27 +122,29 @@ export default function Resume() {
           />
         </section>
 
-        <section>
-          <h2 className={styles.sectionTitle}>Technical Skills</h2>
-          <hr />
+        <section className="mb-5">
+          <h2 className="mb-5 text-center text-2xl font-bold">
+            Technical Skills
+          </h2>
+          <hr className="my-2 border-black" />
           <Skills />
         </section>
-        <section>
-          <h2 className={styles.sectionTitle}>Languages</h2>
-          <hr />
-          <ul>
+        <section className="mb-5">
+          <h2 className="mb-5 text-center text-2xl font-bold">Languages</h2>
+          <hr className="my-2 border-black" />
+          <ul className="list-inside list-disc">
             <li>Arabic: Native</li>
             <li>English: Fluent</li>
           </ul>
         </section>
-        <section className={styles.experience}>
-          <h2 className={styles.sectionTitle}>Education</h2>
-          <hr />
-          <div className={styles.position}>
-            <h3>Helwan University</h3>
+        <section className="mb-10">
+          <h2 className="mb-5 text-center text-2xl font-bold">Education</h2>
+          <hr className="my-2 border-black" />
+          <div className="flex flex-wrap justify-between">
+            <h3 className="text-lg font-bold">Helwan University</h3>
             <p>2015 - 2019</p>
           </div>
-          <p>
+          <p className="my-4">
             Bachelor of Commerce and Business Administration, Applied Statistics
           </p>
         </section>
@@ -152,25 +155,27 @@ export default function Resume() {
 
 function CompactContactLine({ name, href, icon }) {
   return (
-    <div className={styles.compactContactLine}>
+    <div className="flex items-center">
       {icon}
-      <Link href={href}>{name}</Link>
+      <Link href={href} className="ml-1 underline">
+        {name}
+      </Link>
     </div>
   );
 }
 
 function Experience({ company, date, items, title }) {
   return (
-    <div className={styles.experience}>
-      <div className={styles.position}>
+    <div className="mb-10">
+      <div className="flex flex-wrap justify-between">
         <div>
-          <h3>{title}</h3>
+          <h3 className="text-lg font-bold leading-none">{title}</h3>
           <p>{company}</p>
         </div>
         <p>{date}</p>
       </div>
       {items && (
-        <ul>
+        <ul className="mb-5 mt-3 list-outside list-disc pl-5">
           {items.map((item) => (
             <li key={item}>{item}</li>
           ))}
