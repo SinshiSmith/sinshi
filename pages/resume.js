@@ -8,13 +8,13 @@ import Skills from "../components/Resume/Skills";
 
 export default function Resume() {
   return (
-    <div className="flex items-center justify-center min-h-screen">
+    <div className="flex min-h-screen items-center justify-center">
       <Head>
         <title>Ahmed Hafez | Resume</title>
         <meta name="description" content="Ahmed Hafez | Resume" />
       </Head>
-      <div className="p-6 max-w-[800px] bg-gray-100 text-black rounded">
-        <div className="flex justify-between mb-10 flex-wrap">
+      <div className="max-w-[800px] rounded bg-gray-100 p-6 text-black">
+        <div className="mb-10 flex flex-wrap justify-between">
           <div>
             <h1 className="text-6xl font-bold">Ahmed Hafez</h1>
             <h2 className="text-3xl font-bold">Senior Frontend Developer</h2>
@@ -45,7 +45,7 @@ export default function Resume() {
         </div>
 
         <section>
-          <h2 className="text-2xl text-center font-bold mb-5">
+          <h2 className="mb-5 text-center text-2xl font-bold">
             Professional Experience
           </h2>
           <hr className="my-2 border-black" />
@@ -123,24 +123,24 @@ export default function Resume() {
         </section>
 
         <section className="mb-5">
-          <h2 className="text-2xl text-center font-bold mb-5">
+          <h2 className="mb-5 text-center text-2xl font-bold">
             Technical Skills
           </h2>
           <hr className="my-2 border-black" />
           <Skills />
         </section>
         <section className="mb-5">
-          <h2 className="text-2xl text-center font-bold mb-5">Languages</h2>
+          <h2 className="mb-5 text-center text-2xl font-bold">Languages</h2>
           <hr className="my-2 border-black" />
-          <ul className="list-disc list-inside">
+          <ul className="list-inside list-disc">
             <li>Arabic: Native</li>
             <li>English: Fluent</li>
           </ul>
         </section>
         <section className="mb-10">
-          <h2 className="text-2xl text-center font-bold mb-5">Education</h2>
+          <h2 className="mb-5 text-center text-2xl font-bold">Education</h2>
           <hr className="my-2 border-black" />
-          <div className="flex justify-between flex-wrap">
+          <div className="flex flex-wrap justify-between">
             <h3 className="text-lg font-bold">Helwan University</h3>
             <p>2015 - 2019</p>
           </div>
@@ -167,7 +167,7 @@ function CompactContactLine({ name, href, icon }) {
 function Experience({ company, date, items, title }) {
   return (
     <div className="mb-10">
-      <div className="flex justify-between flex-wrap">
+      <div className="flex flex-wrap justify-between">
         <div>
           <h3 className="text-lg font-bold leading-none">{title}</h3>
           <p>{company}</p>
@@ -175,7 +175,7 @@ function Experience({ company, date, items, title }) {
         <p>{date}</p>
       </div>
       {items && (
-        <ul className="list-disc list-outside mb-5 mt-3 pl-5">
+        <ul className="mb-5 mt-3 list-outside list-disc pl-5">
           {items.map((item) => (
             <li key={item}>{item}</li>
           ))}

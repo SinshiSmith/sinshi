@@ -38,10 +38,10 @@ const skills = [
 
 export default function SkillsSection() {
   return (
-    <section className="text-center min-h-screen flex items-center justify-center">
+    <section className="flex min-h-screen items-center justify-center text-center">
       <div>
-        <h2 className="text-2xl font-bold my-5">Skills And Technologies</h2>
-        <ul className="grid gap-8 grid-cols-2 p-5 w-screen max-w-md md:grid-cols-3 md:p-0">
+        <h2 className="my-5 text-2xl font-bold">Skills And Technologies</h2>
+        <ul className="grid w-screen max-w-md grid-cols-2 gap-8 p-5 md:grid-cols-3 md:p-0">
           {skills.map(({ name, icon }) => (
             <Skill key={name} name={name} icon={icon} />
           ))}
@@ -53,7 +53,7 @@ export default function SkillsSection() {
 
 const Skill = ({ name, icon }) => {
   return (
-    <div className="h-32 rounded bg-zinc-800 flex items-center justify-center">
+    <div className="flex h-32 items-center justify-center rounded bg-zinc-800">
       <div>
         {icon}
         <p className="mt-2">{name}</p>
