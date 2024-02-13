@@ -50,14 +50,37 @@ export default function Resume() {
           </h2>
           <hr className="my-2 border-black" />
           <Experience
+            title="Senior Next.js Developer"
+            company="yes!devs GmbH"
+            date="Nov 2023 - Current"
+            items={[]}
+            skills={[
+              "Next.js",
+              "Contentful CMS",
+              "Tailwind",
+              "Framer Motion",
+              "TypeScript",
+              "React",
+            ]}
+          />
+          <Experience
             title="Full-Stack Developer"
             company="2B Creative"
-            date="Jan 2023 - Current"
+            date="Jan 2023 - Nov 2023"
             items={[
               `Developed and maintained 3 React.js websites with i18n support`,
               `Integrated Storyblok CMS with React website to allow building web pages with visual editor`,
               `Improved Typescript developer experience with Storyblok`,
               `Added support for live chat & reCaptcha protection on forms`,
+            ]}
+            skills={[
+              "Next.js",
+              "Storyblok CMS",
+              "TurboRepo",
+              "Tailwind",
+              "Framer Motion",
+              "TypeScript",
+              "React",
             ]}
           />
           <Experience
@@ -71,6 +94,13 @@ export default function Resume() {
               `Collaborated with senior developers and product manager to create efficient and effective workflow using agile methodology Kanban`,
               `Developed mock-kit of Restful APIs for unit and integration tests`,
               `Designed and Developed a transactions page for the blockchain currency Quarters`,
+            ]}
+            skills={[
+              "Next.js",
+              "Firebase",
+              "css-in-js",
+              "Framer Motion",
+              "React",
             ]}
           />
           <Experience
@@ -164,7 +194,7 @@ function CompactContactLine({ name, href, icon }) {
   );
 }
 
-function Experience({ company, date, items, title }) {
+function Experience({ company, date, items, title, skills = [] }) {
   return (
     <div className="mb-10">
       <div className="flex flex-wrap justify-between">
@@ -174,6 +204,16 @@ function Experience({ company, date, items, title }) {
         </div>
         <p>{date}</p>
       </div>
+      {skills.length > 0 && (
+        <div className="flex flex-wrap gap-2">
+          <p className="font-bold">skills:</p>
+          {skills.map((skill, index) => (
+            <p key={`${company}-${skill}`}>
+              {skill} {index !== skills.length - 1 && "-"}
+            </p>
+          ))}
+        </div>
+      )}
       {items && (
         <ul className="mb-5 mt-3 list-outside list-disc pl-5">
           {items.map((item) => (
