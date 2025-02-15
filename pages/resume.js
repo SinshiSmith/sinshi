@@ -53,9 +53,15 @@ export default function Resume() {
             title="Senior Next.js Developer"
             company="yes!devs GmbH"
             date="Nov 2023 - Current"
-            items={[]}
+            items={[
+              "Reviewed and mentored 3 Mid-level developers on best practices of web development, Next.js, and React",
+              "Developed and implemented highly flexiable content modal for CMS",
+              "Built and maintained websites for some of the largest companies in Germany",
+              "",
+            ]}
             skills={[
               "Next.js",
+              "NodeJS",
               "Contentful CMS",
               "Tailwind",
               "Framer Motion",
@@ -64,7 +70,7 @@ export default function Resume() {
             ]}
           />
           <Experience
-            title="Full-Stack Developer"
+            title="Senior Full-Stack Developer"
             company="2B Creative"
             date="Jan 2023 - Nov 2023"
             items={[
@@ -75,11 +81,11 @@ export default function Resume() {
             ]}
             skills={[
               "Next.js",
-              "Storyblok CMS",
+              "TypeScript",
+              "NodeJS",
               "TurboRepo",
               "Tailwind",
-              "Framer Motion",
-              "TypeScript",
+              "Storyblok CMS",
               "React",
             ]}
           />
@@ -88,8 +94,8 @@ export default function Resume() {
             company="Pocketful of Quarters, Inc"
             date="Jan 2021 - Sep 2022"
             items={[
-              `Lead a team of 4 junior developers to migrate to a new
-                database scheme with Integration/E2E tests`,
+              "developed an esports streamer tournaments hosting platform to serve 10s of thousands of players",
+              `Lead a team of 4 junior developers to migrate to a new database scheme with Integration/E2E tests`,
               `Reviewed Junior Developers PRs and Guided them to best practices for JavaScript, React, and CSS`,
               `Collaborated with senior developers and product manager to create efficient and effective workflow using agile methodology Kanban`,
               `Developed mock-kit of Restful APIs for unit and integration tests`,
