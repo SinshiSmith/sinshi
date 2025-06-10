@@ -1,19 +1,21 @@
 import Link from "next/link";
 import Head from "next/head";
-import Skills from "../components/Resume/Skills";
+import Skills from "../../components/Resume/Skills";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Ahmed Hafez | Resume",
+  description: "Ahmed Hafez | Resume",
+};
 
 export default function Resume() {
   return (
     <div className="flex min-h-screen items-center justify-center">
-      <Head>
-        <title>Ahmed Hafez | Resume</title>
-        <meta name="description" content="Ahmed Hafez | Resume" />
-      </Head>
       <div className="max-w-[800px] rounded bg-gray-100 p-6 text-black">
         <div className="mb-10 flex flex-wrap justify-center">
           <div className="text-center">
             <h1 className="text-3xl font-bold">Ahmed Hafez</h1>
-            {/* <h2 className="text-3xl font-bold">Senior Fullstack Engineer</h2> */}
+            <h2 className="text-2xl font-bold">Senior Frontend Engineer</h2>
             <div className="flex flex-wrap gap-1">
               <p>yorfnd@gmail.com</p>
               <p>|</p>
@@ -72,7 +74,7 @@ export default function Resume() {
           <Experience
             title="Senior Fullstack Engineer"
             company="yes!devs GmbH, Hamburg, Germany"
-            date="Nov 2023 - Current"
+            date="Jan 2024 - Current"
             items={[
               "Integrated External APIs: Softgarden, SAP CDC, Dropbox, Contentful, Laravel",
               "Reviewed and mentored 3 Mid-level developers on best practices of web development, Next.js, and React",
@@ -92,7 +94,7 @@ export default function Resume() {
           <Experience
             title="Senior FullStack Engineer"
             company="2B Creative, London, United Kingdom"
-            date="Jan 2023 - Nov 2023"
+            date="Jan 2023 - Jan 2024"
             items={[
               `Developed and maintained 3 React.js websites with i18n support`,
               `Integrated Storyblok CMS API with React website to allow building web pages with visual editor`,
@@ -110,7 +112,7 @@ export default function Resume() {
             ]}
           />
           <Experience
-            title="Lead Frontend Engineer"
+            title="Senior Frontend Engineer"
             company="Pocketful of Quarters Inc, Taxes, United States"
             date="Jan 2021 - Sep 2022"
             items={[
@@ -142,6 +144,13 @@ export default function Resume() {
               `Added real-time data updates to time sensitive pages using Firebase snapshots`,
               `Tested most critical features with E2E tests using PlayWright`,
             ]}
+            skills={[
+              "Next.js",
+              "Firebase",
+              "css-in-js",
+              "Framer Motion",
+              "React",
+            ]}
           />
           <Experience
             title="UX/UI Designer"
@@ -154,6 +163,7 @@ export default function Resume() {
               `Improved website design for Mobile devices`,
               `Proposed and owned multiple new features on the website`,
             ]}
+            skills={["Figma"]}
           />
           <Experience
             title="Frontend Engineer"
@@ -165,29 +175,35 @@ export default function Resume() {
               `Developed an in-app store for digital goods with search, categories and filtering`,
               `Developed discord bot management dashboard`,
             ]}
+            skills={[
+              "Next.js",
+              "GraphQL",
+              "css-in-js",
+              "Framer Motion",
+              "React",
+            ]}
           />
 
           <Experience
-            title="Frontend Engineer Intern, Cairo, Egypt"
-            company="Midrule"
+            title="Frontend Engineer Intern"
+            company="Midrule, Cairo, Egypt"
             date="Jun 2018 - Jul 2018"
             items={[
               `Developed websites using HTML, CSS, Javascript, Bootstrap`,
               "Assisted Senior Developers with their tasks",
               `Designed wireframes of UX/UI for company website`,
             ]}
+            skills={["React", "SCSS", "Figma"]}
           />
         </section>
 
         <section className="mt-10 mb-5">
-          <h2 className="mb-5 text-center text-2xl font-bold">
-            Technical Skills
-          </h2>
+          <h2 className="text-2xl font-bold">Technical Skills</h2>
           <hr className="my-2 border-black" />
           <Skills />
         </section>
         <section className="mb-5">
-          <h2 className="mb-5 text-center text-2xl font-bold">Languages</h2>
+          <h2 className="text-2xl font-bold">Languages</h2>
           <hr className="my-2 border-black" />
           <ul className="list-inside list-disc">
             <li>Arabic: Native</li>
@@ -228,7 +244,13 @@ function Experience({
   title,
   skills = [],
   className,
-  location,
+}: {
+  company: string;
+  date: string;
+  items: string[];
+  title: string;
+  skills: string[];
+  className?: string;
 }) {
   return (
     <div className={`mb-5 ${className}`}>
@@ -239,7 +261,6 @@ function Experience({
         </div>
 
         <div>
-          <p>{location}</p>
           <p>{date}</p>
         </div>
       </div>

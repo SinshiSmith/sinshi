@@ -1,19 +1,21 @@
-import Head from "next/head";
 import Image from "next/image";
-import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
-
-import sinshiPic from "../public/sinshi.jpg";
 import Link from "next/link";
+
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+
 import SkillsSection from "../components/HomePage/SkillsSection";
 
-export default function Home() {
+import sinshiPic from "../public/sinshi.jpg";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sinshi | Coding and Design",
+  description: "Sinshi | Coding and Design",
+};
+
+export default async function Page() {
   return (
-    <div>
-      <Head>
-        <title>Sinshi | Coding and Design</title>
-        <meta name="description" content="Sinshi | Coding and Design" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <>
       <main className="flex min-h-screen items-center justify-center p-5 text-center">
         <div>
           <Image
@@ -47,7 +49,7 @@ export default function Home() {
             Resume
           </Link>
 
-          <div className="mt-12 flex items-center justify-center  gap-2 text-3xl">
+          <div className="mt-12 flex items-center justify-center gap-2 text-3xl">
             <Link href="https://www.linkedin.com/in/sinshi-smith/">
               <FaLinkedin />
             </Link>
@@ -58,6 +60,6 @@ export default function Home() {
         </div>
       </main>
       <SkillsSection />
-    </div>
+    </>
   );
 }
