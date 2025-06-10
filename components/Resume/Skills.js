@@ -38,7 +38,6 @@ export default function Skills() {
         <li>Unit/Integration Testing</li>
         <li>react-testing-library</li>
         <li>PlayWright</li>
-        <li>Cypress</li>
       </div>
     </div>
   );
