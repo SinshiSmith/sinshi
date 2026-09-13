@@ -1,7 +1,7 @@
 import {
   SiNextdotjs,
   SiHtml5,
-  SiCss3,
+  SiCss,
   SiJavascript,
   SiReact,
   SiGraphql,
@@ -14,7 +14,7 @@ const iconWidth = "3em";
 
 const skills = [
   { name: "HTML", icon: <SiHtml5 className="m-auto" size={iconWidth} /> },
-  { name: "CSS", icon: <SiCss3 className="m-auto" size={iconWidth} /> },
+  { name: "CSS", icon: <SiCss className="m-auto" size={iconWidth} /> },
   {
     name: "JavaScript",
     icon: <SiJavascript className="m-auto" size={iconWidth} />,
